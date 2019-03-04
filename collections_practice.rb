@@ -77,5 +77,5 @@ def organize_schools(schools)
   final_hash = {}
   location_array = []
   schools.each do |school, location|
-    
+    location_array.push(school
 end
