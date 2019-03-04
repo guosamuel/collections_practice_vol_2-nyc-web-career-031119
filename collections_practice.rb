@@ -90,6 +90,7 @@ def organize_schools(schools)
         unique_location_array.push(school)
       end
     end
+    binding.pry
   end
   final_hash
 end
