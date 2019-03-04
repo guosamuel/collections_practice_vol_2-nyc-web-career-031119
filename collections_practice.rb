@@ -81,5 +81,5 @@ def organize_schools(schools)
   end
   unique_locations = location_array.uniq
   
-  counter = 0
+  
 end
