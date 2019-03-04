@@ -86,7 +86,9 @@ def organize_schools(schools)
   unique_locations.each do |unique_location|
     schools.each do |school, location|
       if unique_location == location[:location]
-        
-  
-  
+        unique_location_array.push(school)
+      end
+    end
+    final_hash[unique_location] = unique_location_array
+    unique_location.clear
 end
