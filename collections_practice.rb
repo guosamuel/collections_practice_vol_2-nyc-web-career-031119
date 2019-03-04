@@ -79,6 +79,6 @@ def organize_schools(schools)
   schools.each do |school, location|
     location_array.push(location[:location])
   end
-  location_array.uniq
+  unique_locations = location_array.uniq
   binding.pry
 end
