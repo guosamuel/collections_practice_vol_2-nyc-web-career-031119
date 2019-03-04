@@ -77,17 +77,19 @@ def organize_schools(schools)
   final_hash = {}
   all_location_array = []
   unique_location_array = []
+  nyc_array = []
+  sf_array = []
+  chicago_array = []
   
   schools.each do |school, location|
     all_location_array.push(location[:location])
   end
   
   unique_locations = all_location_array.uniq
-  binding.pry
-  unique_locations.each do |unique_location|
-    schools.collect do |school, location|
-      final_hash[unique_location] = (unique_location == location[:location])
+  
+  schools.each do |school, location|
+    if unique_locations[0] == location[:location]
+      nyc_array.push(school)
     end
   end
-  final_hash
 end
