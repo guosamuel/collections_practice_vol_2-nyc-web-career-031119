@@ -79,6 +79,7 @@ def organize_schools(schools)
   nyc_array = []
   sf_array = []
   chicago_array =[]
+  
   schools.each do |school, location|
     location_array.push(location[:location])
   end
