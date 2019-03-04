@@ -83,7 +83,7 @@ def organize_schools(schools)
   end
   
   unique_locations = all_location_array.uniq
-  
+  binding.pry
   unique_locations.each do |unique_location|
     schools.collect do |school, location|
       final_hash[unique_location] = (unique_location == location[:location])
