@@ -92,4 +92,17 @@ def organize_schools(schools)
       nyc_array.push(school)
     end
   end
+  
+  schools.each do |school, location|
+    if unique_locations[1] == location[:location]
+      nyc_array.push(school)
+    end
+  end
+  
+  schools.each do |school, location|
+    if unique_locations[2] == location[:location]
+      nyc_array.push(school)
+    end
+  end
+  
 end
