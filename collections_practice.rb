@@ -76,6 +76,8 @@ end
 def organize_schools(schools)
   final_hash = {}
   location_array = []
+  nyc_array = []
+  sf_array = []
   
   schools.each do |school, location|
     location_array.push(location[:location])
