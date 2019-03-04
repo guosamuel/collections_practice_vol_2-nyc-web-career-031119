@@ -75,14 +75,17 @@ end
 
 def organize_schools(schools)
   final_hash = {}
-  location_array = []
+  all_location_array = []
+  unique_location_array = []
   
   schools.each do |school, location|
-    location_array.push(location[:location])
+    all_location_array.push(location[:location])
   end
-  unique_locations = location_array.uniq
+  unique_locations = all_location_array.uniq
   
-  
+  unique_locations.each do |unique_location|
+    schools.each do |school, location|
+      
   
   
 end
