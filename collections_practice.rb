@@ -76,5 +76,6 @@ end
 def organize_schools(schools)
   final_hash = {}
   location_array = []
-  school.each do |
+  schools.each do |school, location|
+    
 end
