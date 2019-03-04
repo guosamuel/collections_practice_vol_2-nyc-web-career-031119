@@ -80,4 +80,5 @@ def organize_schools(schools)
     location_array.push(school[:location])
   end
   location_array.uniq
+  binding.pry
 end
