@@ -92,4 +92,5 @@ def organize_schools(schools)
     final_hash[unique_location] = unique_location_array
     unique_location_array.clear
   end
+  final_hash
 end
