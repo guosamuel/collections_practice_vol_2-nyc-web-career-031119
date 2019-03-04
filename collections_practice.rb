@@ -83,4 +83,6 @@ def organize_schools(schools)
   unique_locations = location_array.uniq
   
   
+  
+  
 end
