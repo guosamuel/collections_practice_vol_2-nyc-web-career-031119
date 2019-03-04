@@ -81,6 +81,7 @@ def organize_schools(schools)
   schools.each do |school, location|
     all_location_array.push(location[:location])
   end
+  
   unique_locations = all_location_array.uniq
   
   unique_locations.each do |unique_location|
