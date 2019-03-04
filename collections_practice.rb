@@ -80,5 +80,5 @@ def organize_schools(schools)
     location_array.push(location[:location])
   end
   unique_locations = location_array.uniq
-  binding.pry
+  
 end
