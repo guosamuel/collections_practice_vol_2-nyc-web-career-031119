@@ -95,14 +95,20 @@ def organize_schools(schools)
   
   schools.each do |school, location|
     if unique_locations[1] == location[:location]
-      nyc_array.push(school)
+      sf_array.push(school)
     end
   end
   
   schools.each do |school, location|
     if unique_locations[2] == location[:location]
-      nyc_array.push(school)
+      chicago_array.push(school)
     end
   end
+  
+  final_hash[unique_locations[0]] = nyc_array
+  final_hash[unique_locations[1]] = sf_array
+  final_hash[unique_locations[2]] = chicago_array
+  
+  final_hash
   
 end
