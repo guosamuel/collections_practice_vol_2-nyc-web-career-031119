@@ -73,8 +73,8 @@ def find_cool(cool)
   cool_array
 end
 
-def organize_schools()
+def organize_schools(schools)
   final_hash = {}
   location_array = []
-  
+  school.each do |
 end
